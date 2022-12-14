@@ -12,7 +12,7 @@ import { dateToEN } from "../ultils"
 
 
 
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, ResponsiveContainer } from 'recharts';
 import Search from '../components/Search';
 
 import "./search.css"
@@ -28,7 +28,7 @@ const SearchPage = () => {
     console.log("data", products)
     // let charData = products?.search_msv
     const areaChart = (charData, index) => {
-        let color = index % 2 == 0 ? "#8884d8" : "#34ac85"
+        let color = index % 2 === 0 ? "#8884d8" : "#34ac85"
         return <ResponsiveContainer width={'100%'} height={120}>
             <AreaChart
                 width={'auto'}
@@ -45,7 +45,7 @@ const SearchPage = () => {
                 {/* <XAxis dataKey="name" /> */}
                 {/* <YAxis /> */}
                 {/* <Tooltip /> */}
-                <Area type="monotone" dataKey="sv" stroke={color} fill={index % 2 == 0 ? "#8884d8" : "#34ac85"} />
+                <Area type="monotone" dataKey="sv" stroke={color} fill={index % 2 === 0 ? "#8884d8" : "#34ac85"} />
             </AreaChart>
         </ResponsiveContainer>
     }

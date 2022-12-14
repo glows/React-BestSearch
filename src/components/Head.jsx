@@ -11,7 +11,7 @@ const Head = (props) => {
                 onClick={() => {
                     navigate("/")
                 }}
-            ><a><span>Best</span>Search</a></div>
+            ><span>Best</span>Search</div>
 
             <div className='shortTitle'>
                 ST

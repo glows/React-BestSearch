@@ -16,7 +16,7 @@ export default function SearchWrap(props) {
     const [input, setInput] = useState(props?.initData ? props?.initData : "")
 
     const handleSubmit = (str) => {
-        if (str.trim().length == 0 || str == '') return
+        if (str.trim().length === 0 || str === '') return
         if (str.trim().split(' ').length > 0) {
             let param = str.split(" ").join('+')
             navigate(`/search/${param}`)
@@ -45,7 +45,7 @@ export default function SearchWrap(props) {
         return () => {
             document.removeEventListener('keydown', keyDownHandler);
         }
-    }, [input])
+    })
     return (
         <>
             <div className='searchWrap'>
