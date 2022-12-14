@@ -1,0 +1,48 @@
+.headWrap {
+    padding: 10px;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.title {
+    text-align: left;
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.shortTitle {
+    display: none;
+}
+
+.extra{
+    width: 80%;
+}
+
+
+.title span {
+    font-weight: bold;
+}
+
+@media (max-width: 650px) { 
+    .title{
+        display: none;
+    }
+
+    .shortTitle{
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 4px;
+        margin-right: 10px;
+        font-family: monospace;
+    }
+ }

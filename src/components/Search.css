@@ -1,0 +1,9 @@
+
+.searchWrap {
+    display: flex;
+    align-items: center;
+}
+
+.searchBtn {
+    margin-left: 15px;
+}
